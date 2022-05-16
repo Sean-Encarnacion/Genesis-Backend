@@ -50,8 +50,8 @@ const registerReservation = asyncHandler(async (req, res) => {
 });
 
 // @desc    Retrieve a reservation
-// @route   POST /api/users/login
-// @access  Public
+// @route   GET /api/reservations
+// @access  Admin
 
 const getReservation = asyncHandler(async (req, res) => {
   const reservationId = req.params.reservationId;
